@@ -1,4 +1,5 @@
 import { IsInt, IsOptional, IsString, ValidateNested } from 'class-validator';
+import 'reflect-metadata'
 
 export class PaginationInput {
   @IsInt()

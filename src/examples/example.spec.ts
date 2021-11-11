@@ -1,5 +1,5 @@
-import { plainToClass } from 'class-transformer';
 import { GetUsersOptionsInput } from './example';
+import { plainToClass } from 'class-transformer';
 
 describe('example bug', () => {
   it('works', () => {

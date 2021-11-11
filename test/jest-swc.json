@@ -7,7 +7,17 @@
   "rootDir": "../src",
   "testRegex": ".*\\.spec\\.ts$",
   "transform": {
-    "^.+\\.(t|j)s$": "@swc/jest"
+    "^.+\\.(t|j)s$": [
+      "@swc-node/jest",
+      {
+        "module": "commonjs",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "dynamicImport": true,
+        "esModuleInterop": true,
+        "keepClassNames": true
+      }
+    ]
   },
   "collectCoverageFrom": [
     "**/*.(t|j)s"
